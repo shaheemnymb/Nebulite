@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=3 uid="uid://dn0hvwqdkmu10"]
+
+[ext_resource type="Script" uid="uid://crwqw7ubi6gy1" path="res://Scripts/drag_blocks_script.gd" id="1_hqkyb"]
+
+[node name="Event Block" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(5.57554, 2.96129)
+
+[node name="Button" type="Button" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(5.57554, 2.96129)
+
+[node name="Drag_blocks_scripts" type="Node" parent="." node_paths=PackedStringArray("drag_block", "block_button")]
+script = ExtResource("1_hqkyb")
+drag_block = NodePath("..")
+block_button = NodePath("../Button")
