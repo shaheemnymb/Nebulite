@@ -18,4 +18,5 @@ func button_up():
 
 func _process(delta: float) -> void:
 	if button_pressed:
-		drag_block.global_position = offset + drag_block.get_global_mouse_position()
+		drag_block.global_position = offset +  drag_block.get_global_mouse_position()
+		
