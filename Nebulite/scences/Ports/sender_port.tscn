@@ -17,6 +17,3 @@ offset_bottom = 40.0
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(19, 19.5)
 shape = SubResource("RectangleShape2D_5xgbr")
-
-[node name="RayCast2D" type="RayCast2D" parent="."]
-position = Vector2(145, 29)
