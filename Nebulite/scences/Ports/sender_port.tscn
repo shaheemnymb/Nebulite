@@ -15,5 +15,12 @@ offset_bottom = 40.0
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(19, 19.5)
+position = Vector2(20, 20)
 shape = SubResource("RectangleShape2D_5xgbr")
+
+[node name="Button" type="Button" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[connection signal="button_down" from="Button" to="." method="_on_button_button_down"]
+[connection signal="button_up" from="Button" to="." method="_on_button_button_up"]

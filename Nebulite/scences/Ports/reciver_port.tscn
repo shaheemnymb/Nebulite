@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://bf0uievfx80o7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xbfsc"]
+size = Vector2(40, 40)
+
+[node name="Reciver port" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Area2D" type="Area2D" parent="ColorRect" groups=["reciver_port"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ColorRect/Area2D"]
+position = Vector2(20, 20)
+shape = SubResource("RectangleShape2D_xbfsc")
